@@ -27,7 +27,10 @@ También podríamos utilizar directamente la referencia en lugar de **'HEAD@{num
 
 ### 3- El merge del paso 13, ¿Causó algún conflicto? ¿Por qué?
 No causó ningún conflicto, ya que para que un conflicto se de, es necesario que se modifique la misma línea del mismo archivo en dos ramas diferentes y ,en este caso, ambas ramas parten del commit con el archivo creado con el texto inicial y posteriormente sólo se modifica en la rama styled.
+
 ### 4- El merge del paso 19, ¿Causó algún conflicto? ¿Por qué?
+Sí causó conflicto, ya que el archivo **git-nuestro.md** se ha modificado en las ramas **styled** y **htmlify** coincidiendo en las mismas líneas. Ambas ramas partían con el archivo con el texto inicial y se modificó a posteriori. Así que al absorver styled a htmlify se genera un conflicto porque git no sabe cual de las modificaciones elegir como correcta.
+ 
 ### 5- El merge del paso 21, ¿Causó algún conflicto? ¿Por qué?
 ### 6- ¿Qué comando o comandos utilizaste en el paso 25?
 ### 7- El merge del paso 26, ¿Podría ser fast forward? ¿Por qué?
