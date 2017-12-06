@@ -26,7 +26,7 @@ Aquí podemos identificar en qué paso volveríamos a tener el trabajo deseado y
 También podríamos utilizar directamente la referencia en lugar de **'HEAD@{num}'**. Ej. **git reset --hard 85124bc**
 
 ### 3- El merge del paso 13, ¿Causó algún conflicto? ¿Por qué?
-
+No causó ningún conflicto, ya que para que un conflicto se de, es necesario que se modifique la misma línea del mismo archivo en dos ramas diferentes y ,en este caso, ambas ramas parten del commit con el archivo creado con el texto inicial y posteriormente sólo se modifica en la rama styled.
 ### 4- El merge del paso 19, ¿Causó algún conflicto? ¿Por qué?
 ### 5- El merge del paso 21, ¿Causó algún conflicto? ¿Por qué?
 ### 6- ¿Qué comando o comandos utilizaste en el paso 25?
