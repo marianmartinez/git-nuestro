@@ -11,6 +11,12 @@ Ejercicio 1
   Si no incluimos este modificador los cambios del working directory se mantendrían.
 
 - ¿Qué comando o comandos utilizaste en el paso 12? ¿Por qué?
+  git reset --hard 'HEAD@{5}'
+  Git guarda un log de todas las referencias de lo que ha pasado. Para verlo podemos utilizar el comando 'git reflog'.
+  Aquí podemos identificar en qué paso volveríamos a tener el trabajo deseado y volver a él con el comando que he indicado.
+  También podíamos utilizar directamente la referencia en lugar de 'HEAD@{5}'. Ej git reset --hard 85124bc
+  
+
 - El merge del paso 13, ¿Causó algún conflicto? ¿Por qué?
 - El merge del paso 19, ¿Causó algún conflicto? ¿Por qué?
 - El merge del paso 21, ¿Causó algún conflicto? ¿Por qué?
