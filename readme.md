@@ -32,9 +32,17 @@ No causó ningún conflicto, ya que para que un conflicto se de, es necesario qu
 Sí causó conflicto, ya que el archivo **git-nuestro.md** se ha modificado en las ramas **styled** y **htmlify** coincidiendo en las mismas líneas. Ambas ramas partían con el archivo con el texto inicial y se modificó a posteriori. Así que al absorber styled a htmlify se genera un conflicto porque git no sabe cual de las modificaciones elegir como correcta.
  
 ### 5- El merge del paso 21, ¿Causó algún conflicto? ¿Por qué?
-No causó ningún conflicto, ya que en master no se había hecho ninguna modificación del archivo **git-nuestro** desde su creación, y la rama styled se creó a partir de ese commit de creación del archivo. Por lo tanto al hacerse el *merge* sólo la rama styled tiene modificaciones del archivo, por lo que git elegiría esos cambios de la rama styled.
+No causó ningún conflicto, ya que en master no se había hecho ninguna modificación del archivo **git-nuestro.md** desde su creación, y la rama styled se creó a partir de ese commit de creación del archivo. Por lo tanto, al hacerse el *merge* sólo en rama styled se han realizado modificaciones del archivo posteriores a su creación, por lo que git elegiría esos cambios.
 
 ### 6- ¿Qué comando o comandos utilizaste en el paso 25?
+```
+log --graph --decorate --pretty=oneline
+```
+
+Podemos crear un alias de este comando con **git config alias.graph "log --graph --decorate --pretty=oneline"**
+
+Tras ésto sólo tendríamos que ejecutar **git graph**
+
 ### 7- El merge del paso 26, ¿Podría ser fast forward? ¿Por qué?
 ### 8- ¿Qué comando o comandos utilizaste en el paso 27?
 ### 9- ¿Qué comando o comandos utilizaste en el paso 28?
