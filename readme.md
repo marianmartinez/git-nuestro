@@ -47,7 +47,30 @@ Tras ésto sólo tendríamos que ejecutar **git graph**
 No podría ser fast forward porque el commit en el que estamos (HEAD) no es un ancestro del commit al que apunta la rama title. Git puede realizar un fast forward cuando puede apuntar al commit que queremos absorber sin perder ningún commit que ya tuviera. En este caso no es así, ya que si hiciera esto, el commit en el que estamos actualmente quedaría inalcanzable. 
 
 ### 8- ¿Qué comando o comandos utilizaste en el paso 27?
+```
+git reset HEAD@{2}
+```
+Realicé un commit adicional en el readme.md por lo que tuve que avanzar dos posiciones.
+
 ### 9- ¿Qué comando o comandos utilizaste en el paso 28?
+```
+git checkout git-nuestro.md
+```
+```
+git checkout git-readme.md 
+```
+
 ### 10- ¿Qué comando o comandos utilizaste en el paso 29?
+```
+git branch -d title
+```
+```
+git branch -D title
+```
+
 ### 11- ¿Qué comando o comandos utilizaste en el paso 30?
+```
+git reset --hard 4eaa1
+```
+
 ### 12- ¿Qué comando o comandos usaste en el paso 32?
