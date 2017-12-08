@@ -44,6 +44,8 @@ Podemos crear un alias de este comando con **git config alias.graph "log --graph
 Tras ésto sólo tendríamos que ejecutar **git graph**
 
 ### 7- El merge del paso 26, ¿Podría ser fast forward? ¿Por qué?
+No podría ser fast forward porque el commit en el que estamos (HEAD) no es un ancestro del commit al que apunta la rama title. Git puede realizar un fast forward cuando puede apuntar al commit que queremos absorber sin perder ningún commit que ya tuviera. En este caso no es así, ya que si hiciera esto, el commit en el que estamos actualmente quedaría inalcanzable. 
+
 ### 8- ¿Qué comando o comandos utilizaste en el paso 27?
 ### 9- ¿Qué comando o comandos utilizaste en el paso 28?
 ### 10- ¿Qué comando o comandos utilizaste en el paso 29?
