@@ -78,3 +78,8 @@ git reset --hard 4eaa1
 git reset --hard 14959fc
 ```
 
+### 13- ¿Qué comando o comandos usaste en el punto 33?
+```
+git reset --hard d713467
+```
+
